@@ -9,10 +9,9 @@
                 <input name="id" type="hidden" value="<?= $article['id'] ?>" />
                 <button type="submit" class="btn btn-primary">Read more…</button>
             </form>
-            
         </div>
-        <div class="card-footer"><a href="/category.php?id=<?= $article['category'] ?>"><span
-                    class="badge badge-secondary"><?= findCategoryById($article['category'])['name'] ?></span></a> <small class="text-muted">Published on
-                <?= $article['date'] ?></small></div>
+        <div class="card-footer"><a href="/category.php?id=<?= $article['category_id'] ?>"><span
+                class="badge badge-secondary"><?= findCategoryById($article['category_id'])['name'] ?></span></a> <small class="text-muted">Published on
+            <?= $article['date'] ?></small></div>
     </div>
 </li>
