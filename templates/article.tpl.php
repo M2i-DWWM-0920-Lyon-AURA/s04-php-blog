@@ -1,11 +1,11 @@
 <article>
     <div class="jumbotron">
-        <h1><?= $article['title'] ?></h1><small>Published on <?= $article['date'] ?></small><img
-            src="<?= $article['image'] ?>" class="img-fluid">
+        <h1><?= $article->getTitle() ?></h1><small>Published on <?= $article->getDate() ?></small><img
+            src="<?= $article->getImage() ?>" class="img-fluid">
     </div>
     <div>
 
-        <?= $article['content'] ?>
+        <?= $article->getContent() ?>
 
     </div><a href="/"><button type="button" class="btn btn-secondary">Back to Home</button></a>
 </article>
